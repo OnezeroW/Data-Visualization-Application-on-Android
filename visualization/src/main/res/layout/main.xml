@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_query" >
+
+    <RelativeLayout
+        android:id="@+id/query_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_query_bg">
+
+        <TextView
+            android:id="@+id/query_user_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/query_user_input"
+            style="@style/normalText"
+            />
+        
+        <EditText
+            android:id="@+id/input_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/query_user_input_hint"
+            android:layout_below="@id/query_user_input"
+            android:singleLine="true"
+            android:inputType="text"
+            />
+
+        <Button
+            android:id="@+id/query_button_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/line_chart"
+            android:layout_below="@+id/input_txt"
+            />
+
+        <Button
+            android:id="@+id/query_button_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bar_chart"
+            android:layout_below="@+id/input_txt"
+            android:layout_toRightOf="@+id/query_button_line"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

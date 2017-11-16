@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="query_user_input">请输入查询参数</string>
+    <string name="query_user_input_hint">误差/百分比</string>
+    <string name="line_chart">折线图</string>
+    <string name="bar_chart">直方图</string>
+    <string name="title_activity_my_draw">MyDraw</string>
+    <string name="title_activity_my_draw_bar">MyDrawBar</string>
+    <string name="title_activity_main">Visualization</string>
+
+    <string name="action_settings">setting</string>
+    <string name="title_activity_my_draw_detail">MyDrawDetail</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/add_datelayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            >
+
+<!--            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:text="2014" />-->
+
+            <ImageView
+                android:id="@+id/minus_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView1"
+                />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView1"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/detaillayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_datelayout"
+            android:layout_marginTop="10dp" >
+
+            <!--<TextView
+                android:id="@+id/allincome_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:textSize="16sp"
+                android:text="21000.00"
+                />-->
+
+<!--            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="38dp"
+                android:textSize="18sp"
+                android:text="总收入" />-->
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:id="@+id/rela"
+            android:layout_below="@id/detaillayout"
+            android:background="@color/white" >
+            <TextView
+                android:id="@+id/charview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

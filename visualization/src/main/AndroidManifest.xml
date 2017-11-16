@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.first.visualization" >
+
+    <!--
+    <uses-sdk
+        android:maxSdkVersion="9"
+        android:minSdkVersion="8"
+        android:targetSdkVersion="9" />
+    -->
+    android:versionCode="1"
+    android:versionName="0.11" >
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bigear"
+        android:label="Visualization"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        <activity
+            android:name=".Main"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyDraw"
+            android:label="@string/title_activity_my_draw"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".MyDrawBar"
+            android:label="@string/title_activity_my_draw_bar"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".MyDrawDetail"
+            android:label="@string/title_activity_my_draw_detail"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>
